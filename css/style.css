@@ -128,7 +128,7 @@ body {
   background-color: #f4f4fd;
 }
 .list-foto {
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 /* footer */
 .footer {
