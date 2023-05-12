@@ -29,10 +29,10 @@ img {
 }
 
 .list {
-color: #434455;
-display: flex;
-gap: 40px;
-  }
+  color: #434455;
+  display: flex;
+  gap: 40px;
+}
 
 .menu-item {
   text-decoration: none;
@@ -83,7 +83,6 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
-
 }
 
 .span-logo {
@@ -95,12 +94,16 @@ body {
 }
 
 .menu {
-display: flex;
-gap: 40px;
+  display: flex;
+  gap: 40px;
+}
+
 /* address */
 
 .address {
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .link-adress {
