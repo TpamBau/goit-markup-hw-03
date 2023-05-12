@@ -30,6 +30,7 @@ img {
 
 .list {
   color: #434455;
+  
 }
 
 .menu-item {
@@ -88,6 +89,10 @@ body {
   display: flex;
   align-items: center;
 }
+
+.menu {
+display: flex;
+gap: 40px;
 /* address */
 
 .address {
