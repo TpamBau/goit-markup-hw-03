@@ -29,9 +29,10 @@ img {
 }
 
 .list {
-  color: #434455;
-  
-}
+color: #434455;
+display: flex;
+gap: 40px;
+  }
 
 .menu-item {
   text-decoration: none;
