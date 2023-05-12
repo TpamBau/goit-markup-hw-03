@@ -66,6 +66,8 @@ body {
 .conteiner-header {
   display: flex;
   width: 1158px;
+  margin: auto;
+  padding: 0 15px 0 15px;
 }
 
 .logo {
@@ -76,10 +78,15 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .span-logo {
   color: #2e2f42;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
 }
 /* address */
 
