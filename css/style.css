@@ -17,6 +17,11 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 2px solid green;
+}
+
+li {
+  outline: 2px solid rgb(255, 145, 0);
 }
 
 img {
@@ -24,14 +29,6 @@ img {
   display: block;
   /* максимальная ширина, чтоб не растягивались */
   max-width: 100%;
-}
-
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 5px solid crimson;
 }
 
 .list {
@@ -69,13 +66,20 @@ body {
   background-color: var(--background-color);
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid crimson;
+}
+
 /* header */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 .conteiner-header {
   display: flex;
-
   margin: auto;
   padding: 0 15px 0 15px;
 }
@@ -152,6 +156,8 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 .button-service:hover,
 .button-service:focus {
