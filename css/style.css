@@ -10,9 +10,10 @@ h5,
 h6,
 p {
   margin: 0;
-  padding: 0;
 }
-ul {
+
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -26,6 +27,11 @@ img {
 }
 
 .container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 5px solid crimson;
 }
 
 .list {
@@ -69,7 +75,7 @@ body {
 }
 .conteiner-header {
   display: flex;
-  width: 1158px;
+
   margin: auto;
   padding: 0 15px 0 15px;
 }
