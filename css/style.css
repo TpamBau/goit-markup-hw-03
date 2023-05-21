@@ -7,16 +7,14 @@ body {
   padding: 1px;
   width: 1440px;
   background-color: var(--background-color);
-margin: 0auto;
+  margin: 0 auto;
   /* box-sizing: border-box;
  
   margin-left: auto;
   margin-right: auto; */
-
 }
 
-
-/* Всем заголовкам и абзацам убираемотступысверхусниху от браузера */
+/* Всем заголовкам и абзацам убираем отступы сверху сниху от браузера */
 p,
 h1,
 h2,
@@ -37,12 +35,16 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* Спискам убрать точки */
 .list {
   list-style: none;
+
   color: #434455;
-  outline: 2pxsolidgreen;
+  /* outline: 2px solid green; */
 }
 
 .list {
@@ -61,29 +63,20 @@ img {
   color: #2e2f42;
 }
 
-                                      /* Х-Е-Д-Е-Р */
+/* Х-Е-Д-Е-Р */
 /**--------------------- HEADER------------------ */
 
-/**-------------------- container ------------------------ */
+/**-------------------- CONTAINER ------------------------ */
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0auto;
-  outline: 2pxsolidred;
-  
-
-
-  /* color: #434455;
-  /* background-color: var(--background-color); */
-  
-  margin: 0auto;
-  padding: 015px; */
-  box-shadow: 0px4px16pxrgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid red; */
+  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25); */
 }
 
 .header {
-  border-bottom: 1pxsolid#e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -95,12 +88,10 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  padding-left: 156px;
 }
 
-
 .header-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -114,23 +105,19 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px; 
-  padding-bottom: 24px;
 }
 
-.header-list:first-child {
-  padding-top: 24px; 
+.header-list :first-child {
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 
 .header-address {
   font-style: normal;
   /* font-style: normal; НАКРЕСЛЕННЯ ТЕКСТУ, НОРМ, КУРСИВ */
-padding-right: 156px;
 }
 
-.header-addressli {
-
+.header-address li {
 }
 
 .span-logo {
@@ -169,19 +156,18 @@ padding-right: 156px;
   color: #404bbf;
 }
 
+. portfolio-list .link {
+  background: #ffffff;
+  /* CORNFLOWER */
 
-. portfolio-list.link {
-  background: #FFFFFF;
-/* CORNFLOWER */
-
-border: 1pxsolid#E7E9FC;
+  border: 1px solid #e7e9fc;
 }
 
 /**---------------------- section 1 --------------------- */
 
 .hero {
-  padding: 188px0;
-  background: #2E2F42;
+  padding: 188px 0;
+  background: #2e2f42;
 }
 
 .hero-container {
@@ -192,7 +178,7 @@ border: 1pxsolid#E7E9FC;
 
 .hero-title {
   font-size: 56px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
@@ -207,30 +193,29 @@ border: 1pxsolid#E7E9FC;
 }
 
 .button-service {
-  
   /* для можливості центрувати кнопку через властивість margin */
   display: block;
-  
+
   /* визначення мінімальної ширини кнопки */
   min-width: 169px;
   height: 56px;
-  
+
   /* вимкнення стандартного оформлення кнопки */
   border: none;
-  
+
   /* визначення заокруглень у кнопки */
   border-radius: 4px;
 
   /* визначення типу курсору на кнопці */
   cursor: pointer;
 
-   /* white-space: nowrap; Запобігти переносу тексту */
+  /* white-space: nowrap; Запобігти переносу тексту */
   white-space: nowrap;
-  padding: 8px32px;
+  padding: 8px 32px;
   gap: 10px;
 
   background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -248,15 +233,15 @@ border: 1pxsolid#E7E9FC;
 /** -------------------- section 2 ----------------- */
 
 .skills {
-  padding: 120px0;
+  padding: 120px 0;
 }
 
-.section-2-list-div.list {
+.section-2-list-div .list {
   gap: 24px;
 }
 
 .characteristics {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .second-title {
@@ -268,7 +253,7 @@ border: 1pxsolid#E7E9FC;
   padding-top: 32px;
 }
 
-.characteristics.second-title {
+.characteristics .second-title {
   margin-bottom: 8px;
 }
 
@@ -286,7 +271,7 @@ border: 1pxsolid#E7E9FC;
 /**--------------------------- section 3 ---------------------- */
 
 .doing {
-  padding: 120px0;
+  padding-bottom: 120px;
 }
 
 .title-main {
@@ -301,85 +286,82 @@ border: 1pxsolid#E7E9FC;
   margin-bottom: 72px;
 }
 
-.section-3-list-div.list {
+.section-3-list-div .list {
   gap: 24px;
 }
 
 .work {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
-.title-mainlist {
+.title-main list {
   padding-left: 0px;
 }
 
 /** -------------------------- section 4 -----------------*/
 .sec-ourteam {
-  padding: 120px0;
-  
-
+  padding: 120px 0;
+  background-color: #f4f4fd;
 }
 
 .section-4-list-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: #f4f4fd;
+  margin: o auto;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .our-team {
   gap: 24px;
+  /* background-color: tomato; */
 }
 
 .list-foto {
-  width: calc((100%-72px) / 4);
-  border-radius: 0px0px4px4px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-
 }
 
-.pib  {
-  padding: 32px16px;
+.pib {
+  padding: 32px 16px;
 }
 
-.pib.second-title {
+.pib .second-title {
   text-align: center;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 
-.list-foto.second-title {
+.list-foto .second-title {
   text-align: center;
 }
 
-.pib.paragraf {
+.pib .paragraf {
   text-align: center;
 }
 
 /**--------------------- footer -------------------------- */
 
 .footer {
-  padding: 100px0;
-  background: #2E2F42;
-  
-  
+  padding: 100px 0;
+  background: #2e2f42;
 }
 
 .footer-a-p {
+  padding-left: 40px;
   /* display: flex;
   flex-direction: column;
   align-items: left; */
-  padding-left: 0;
+
   /* padding-top: 100px;
   padding-bottom: 100px; */
-
-  background: #2E2F42;
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -387,7 +369,6 @@ border: 1pxsolid#E7E9FC;
   text-transform: uppercase;
   /* text-transform: uppercase; РЕГІСТР СИМВОЛІВ У ТЕКСТІ */
   color: #4d5ae5;
-
 }
 
 .web {
@@ -404,9 +385,9 @@ border: 1pxsolid#E7E9FC;
   padding-top: 16px;
 }
 
-/* main */
+/** ------------------------------ main -------------*/
 .button-all {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -414,12 +395,21 @@ border: 1pxsolid#E7E9FC;
   color: #4d5ae5;
   background-color: #f4f4fd;
   cursor: pointer;
+
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
+
 .button-all:hover,
 .button-all:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .title-link {
   font-weight: 500;
   font-size: 20px;
@@ -428,8 +418,8 @@ border: 1pxsolid#E7E9FC;
   color: #2e2f42;
 }
 
-.sec-ourteam.list {
-  padding: 72px156px104px156px;
+.portfolio-div-h2p .title-link {
+  margin-bottom: 8px;
 }
 
 .address {
@@ -437,63 +427,42 @@ border: 1pxsolid#E7E9FC;
 }
 
 img {
-  /* убираемснизуотступ от каждой картинки */
+  /* убираем снизу отступ от каждой картинки */
   display: block;
   /* максимальная ширина, чтоб не растягивались */
   max-width: 100%;
 }
 
-/* portfolio *//* P-O-R-T-F-O-L-I-O *//* portfolio */
+/** portfolio */ /* P-O-R-T-F-O-L-I-O */ /* portfolio */
 
-.portfolio-button-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  margin-top: 96px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 72px;
-
-  width: 586px;
-  height: 48px;
+.portfolio {
+  padding: 96px 0 120px;
 }
 
-.button-all {
-  width: 69px;
-  height: 48px;
+/* СПИСОК, флекс в тезі .link */
+.portfolio-button-list {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
-  display: flex;
-  /* FLEX - это в одну строку */
   flex-wrap: wrap;
-  /* flex-wrap: wrap; - в строкебольше одного этажа */
-
-  gap: 16px;
+  /* flex-wrap: wrap; - в строке больше одного этажа */
+  column-gap: 24px;
+  row-gap: 48px;
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 120px;
 }
 
-.portfolio-listli {
-  flex-basis: calc((100%-2*24px) / 3);
+.item-list {
+  width: calc((100% - 48px) / 3);
+  /* flex-basis: calc((100% - 2 * 24px) / 3); */
 }
 
-.portfolio-button-listli {
-  /* border-radiusскругление, но изобрсверху не скруглилось */
-  /* нужнозапретитьпереполнениеелементов */
-  /* доб в началеoverflow: hidden; */
-  overflow: hidden;
-  /* overflow: hidden; СКРУГЛИТЬ КАРТИНКИ */
-  border-radius: 4px;
-  border: #404bbf;
+.portfolio-div-h2p {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
-
-.portfolio-button-listli:hover {
-  filter: drop-shadow(0px4px16pxrgba(0, 0, 0, 0.25));
-}
-
-
