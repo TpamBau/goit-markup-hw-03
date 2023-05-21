@@ -5,9 +5,18 @@
 body {
   font-family: 'Roboto', normal;
   padding: 1px;
+  width: 1440px;
+  background-color: var(--background-color);
+margin: 0auto;
+  /* box-sizing: border-box;
+ 
+  margin-left: auto;
+  margin-right: auto; */
+
 }
 
-/* Всем заголовкам и абзацам убираем отступы сверху сниху от браузера */
+
+/* Всем заголовкам и абзацам убираемотступысверхусниху от браузера */
 p,
 h1,
 h2,
@@ -26,13 +35,14 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
 }
+
 
 /* Спискам убрать точки */
 .list {
   list-style: none;
   color: #434455;
+  outline: 2pxsolidgreen;
 }
 
 .list {
@@ -51,28 +61,34 @@ img {
   color: #2e2f42;
 }
 
-/* Х-Е-Д-Е-Р */
-/**-------------- HEADER------------------ */
+                                      /* Х-Е-Д-Е-Р */
+/**--------------------- HEADER------------------ */
 
+/**-------------------- container ------------------------ */
 .container {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
   width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0auto;
+  outline: 2pxsolidred;
+  
+
+
+  /* color: #434455;
+  /* background-color: var(--background-color); */
+  
+  margin: 0auto;
+  padding: 015px; */
+  box-shadow: 0px4px16pxrgba(0, 0, 0, 0.25);
 }
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1pxsolid#e7e9fc;
 }
 
 .header-container {
   display: flex;
-  text-decoration: none;
-  display: flex;
-  align-items: baseline;
-  background-color: var(--background-color);
-  border-bottom: 1px solid #e7e9fc;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -82,8 +98,9 @@ img {
   padding-left: 156px;
 }
 
+
 .header-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -97,22 +114,23 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
+  padding-top: 24px; 
   padding-bottom: 24px;
 }
 
-.header-list :first-child {
-  padding-top: 24px;
+.header-list:first-child {
+  padding-top: 24px; 
   padding-bottom: 24px;
 }
 
 .header-address {
   font-style: normal;
   /* font-style: normal; НАКРЕСЛЕННЯ ТЕКСТУ, НОРМ, КУРСИВ */
-  padding-right: 156px;
+padding-right: 156px;
 }
 
-.header-address li {
+.header-addressli {
+
 }
 
 .span-logo {
@@ -151,18 +169,19 @@ img {
   color: #404bbf;
 }
 
-. portfolio-list .link {
-  background: #ffffff;
-  /* CORNFLOWER */
 
-  border: 1px solid #e7e9fc;
+. portfolio-list.link {
+  background: #FFFFFF;
+/* CORNFLOWER */
+
+border: 1pxsolid#E7E9FC;
 }
 
 /**---------------------- section 1 --------------------- */
 
 .hero {
-  padding: 188px 0;
-  background-color: #2e2f42;
+  padding: 188px0;
+  background: #2E2F42;
 }
 
 .hero-container {
@@ -173,7 +192,7 @@ img {
 
 .hero-title {
   font-size: 56px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
@@ -188,29 +207,30 @@ img {
 }
 
 .button-service {
+  
   /* для можливості центрувати кнопку через властивість margin */
   display: block;
-
+  
   /* визначення мінімальної ширини кнопки */
   min-width: 169px;
   height: 56px;
-
+  
   /* вимкнення стандартного оформлення кнопки */
   border: none;
-
+  
   /* визначення заокруглень у кнопки */
   border-radius: 4px;
 
   /* визначення типу курсору на кнопці */
   cursor: pointer;
 
-  /* white-space: nowrap; Запобігти переносу тексту */
+   /* white-space: nowrap; Запобігти переносу тексту */
   white-space: nowrap;
-  padding: 8px 32px;
+  padding: 8px32px;
   gap: 10px;
 
   background-color: #4d5ae5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -228,15 +248,15 @@ img {
 /** -------------------- section 2 ----------------- */
 
 .skills {
-  padding: 120px 0;
+  padding: 120px0;
 }
 
-.section-2-list-div .list {
+.section-2-list-div.list {
   gap: 24px;
 }
 
 .characteristics {
-  width: calc((100% - 72px) / 4);
+  width: calc((100%-72px) / 4);
 }
 
 .second-title {
@@ -248,7 +268,7 @@ img {
   padding-top: 32px;
 }
 
-.characteristics .second-title {
+.characteristics.second-title {
   margin-bottom: 8px;
 }
 
@@ -266,7 +286,7 @@ img {
 /**--------------------------- section 3 ---------------------- */
 
 .doing {
-  padding: 120px 0;
+  padding: 120px0;
 }
 
 .title-main {
@@ -281,21 +301,23 @@ img {
   margin-bottom: 72px;
 }
 
-.section-3-list-div .list {
+.section-3-list-div.list {
   gap: 24px;
 }
 
 .work {
-  width: calc((100% - 48px) / 3);
+  width: calc((100%-48px) / 3);
 }
 
-.title-main list {
+.title-mainlist {
   padding-left: 0px;
 }
 
 /** -------------------------- section 4 -----------------*/
 .sec-ourteam {
-  padding: 120px 0;
+  padding: 120px0;
+  
+
 }
 
 .section-4-list-div {
@@ -311,53 +333,53 @@ img {
 }
 
 .list-foto {
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
+  width: calc((100%-72px) / 4);
+  border-radius: 0px0px4px4px;
   background-color: #ffffff;
+
 }
 
-.pib {
-  padding: 32px 16px;
+.pib  {
+  padding: 32px16px;
 }
 
-.pib .second-title {
+.pib.second-title {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
 
-.list-foto .second-title {
+.list-foto.second-title {
   text-align: center;
 }
 
-.pib .paragraf {
+.pib.paragraf {
   text-align: center;
 }
 
 /**--------------------- footer -------------------------- */
 
 .footer {
-  padding: 100px 0;
-  background-color: #2e2f42;
+  padding: 100px0;
+  background: #2E2F42;
+  
+  
 }
 
 .footer-a-p {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: left;
-  padding-left: 156px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /* FOREST GREEN */
-  background: #0f3f3c;
-}
+  align-items: left; */
+  padding-left: 0;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 
-.footer-a-p {
+  background: #2E2F42;
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -365,6 +387,7 @@ img {
   text-transform: uppercase;
   /* text-transform: uppercase; РЕГІСТР СИМВОЛІВ У ТЕКСТІ */
   color: #4d5ae5;
+
 }
 
 .web {
@@ -383,7 +406,7 @@ img {
 
 /* main */
 .button-all {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -405,8 +428,8 @@ img {
   color: #2e2f42;
 }
 
-.sec-ourteam .list {
-  padding: 72px 156px 104px 156px;
+.sec-ourteam.list {
+  padding: 72px156px104px156px;
 }
 
 .address {
@@ -414,13 +437,13 @@ img {
 }
 
 img {
-  /* убираем снизу отступ от каждой картинки */
+  /* убираемснизуотступ от каждой картинки */
   display: block;
   /* максимальная ширина, чтоб не растягивались */
   max-width: 100%;
 }
 
-/* portfolio */ /* P-O-R-T-F-O-L-I-O */ /* portfolio */
+/* portfolio *//* P-O-R-T-F-O-L-I-O *//* portfolio */
 
 .portfolio-button-list {
   display: flex;
@@ -442,16 +465,11 @@ img {
   height: 48px;
 }
 
-.portfolio-main {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
 .portfolio-list {
   display: flex;
   /* FLEX - это в одну строку */
   flex-wrap: wrap;
-  /* flex-wrap: wrap; - в строке больше одного этажа */
+  /* flex-wrap: wrap; - в строкебольше одного этажа */
 
   gap: 16px;
   width: 1128px;
@@ -460,20 +478,22 @@ img {
   padding-bottom: 120px;
 }
 
-.portfolio-list li {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+.portfolio-listli {
+  flex-basis: calc((100%-2*24px) / 3);
 }
 
-.portfolio-button-list li {
-  /* border-radius скругление, но изобр сверху не скруглилось */
-  /* нужно запретить переполнение елементов */
-  /* доб в начале overflow: hidden; */
+.portfolio-button-listli {
+  /* border-radiusскругление, но изобрсверху не скруглилось */
+  /* нужнозапретитьпереполнениеелементов */
+  /* доб в началеoverflow: hidden; */
   overflow: hidden;
   /* overflow: hidden; СКРУГЛИТЬ КАРТИНКИ */
   border-radius: 4px;
   border: #404bbf;
 }
 
-.portfolio-button-list li:hover {
-  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+.portfolio-button-listli:hover {
+  filter: drop-shadow(0px4px16pxrgba(0, 0, 0, 0.25));
 }
+
+
