@@ -2,13 +2,19 @@
   --background-color: #ffffff;
 }
 
+body {
+  font-family: 'Roboto', normal;
+  padding: 1px;
+}
+
+/* Всем заголовкам и абзацам убираем отступы сверху сниху от браузера */
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
 }
 
@@ -16,38 +22,24 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-  list-style: none;
-  outline: 2px solid green;
-}
-
-li {
-  outline: 2px solid rgb(255, 145, 0);
 }
 
 img {
-  /* убираем снизу отступ от каждой картинки */
   display: block;
-  /* максимальная ширина, чтоб не растягивались */
-  max-width: 100%;
+}
+
+/* Спискам убрать точки */
+.list {
+  list-style: none;
+  color: #434455;
 }
 
 .list {
-  color: #434455;
   display: flex;
+  align-items: center;
   gap: 40px;
-}
-
-.menu-item {
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.menu-item:focus,
-.link:hover {
-  color: #404bbf;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .link {
@@ -56,65 +48,78 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: var(--background-color);
-}
+/* Х-Е-Д-Е-Р */
+/**-------------- HEADER------------------ */
 
 .container {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  /* background-color: var(--background-color); */
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  display: flex;
-  outline: 2px solid crimson;
-  display: flex;
-  justify-content: space-around;
+  padding: 0 15px;
 }
 
-/* header */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.logo {
+.header-container {
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  padding-left: 156px;
+}
+
+.header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  /* text-transform: uppercase; РЕГІСТР СИМВОЛІВ У ТЕКСТІ */
   color: #4d5ae5;
   margin-right: 76px;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-list :first-child {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-address {
+  font-style: normal;
+  /* font-style: normal; НАКРЕСЛЕННЯ ТЕКСТУ, НОРМ, КУРСИВ */
+  padding-right: 156px;
+}
+
+.header-address li {
 }
 
 .span-logo {
   color: #2e2f42;
 }
-.page-nav {
-  display: flex;
-  align-items: center;
-}
+/** ----------------address------------------- */
 
-.menu {
-  display: flex;
-  gap: 40px;
-}
-
-/* address */
-
-.address {
-  font-style: normal;
-  display: flex;
-  align-items: center;
-}
-
-.link-adress {
+.header-address-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -123,29 +128,88 @@ body {
   color: #434455;
 }
 
-.link-adress:hover,
-.link-adress:focus {
+.header-address-link:hover,
+.header-address-link:focus {
   color: #404bbf;
 }
 
-/* section 1 */
-.hero-image {
-  background-color: #2e2f42;
+.menu-item {
+  text-decoration: none;
+  /* text-decoration: none; ПРИБРАТИ ПІДКРЕСЛЕННЯ */
+  font-weight: 500;
+  /* font-weight: 500; ТОВЩИНА ШРИФТУ */
+  line-height: 1.5;
+  /* line-height: 1.5; МІЖРЯДКОВИЙ ІНТЕРВАЛ */
+  letter-spacing: 0.02em;
+  /* letter-spacing: 0.02em; ІНТЕРВАЛ МІЖ СИМВОЛАМИ */
+  color: #434455;
+}
+
+.menu-item:focus,
+.link:hover {
+  color: #404bbf;
+}
+
+. portfolio-list .link {
+  background: #ffffff;
+  /* CORNFLOWER */
+
+  border: 1px solid #e7e9fc;
+}
+
+/**---------------------- section 1 --------------------- */
+
+.hero {
+  padding: 188px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
 }
-.hero-name {
+
+.hero-title {
   font-size: 56px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
+  margin-top: 0px;
+  margin-bottom: 48px;
+
+  max-width: 496px;
   text-align: center;
+
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .button-service {
+  /* для можливості центрувати кнопку через властивість margin */
+  display: block;
+
+  /* визначення мінімальної ширини кнопки */
+  min-width: 169px;
+  height: 56px;
+
+  /* вимкнення стандартного оформлення кнопки */
+  border: none;
+
+  /* визначення заокруглень у кнопки */
+  border-radius: 4px;
+
+  /* визначення типу курсору на кнопці */
+  cursor: pointer;
+
+  /* white-space: nowrap; Запобігти переносу тексту */
+  white-space: nowrap;
+  padding: 8px 32px;
+  gap: 10px;
+
   background-color: #4d5ae5;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -154,15 +218,27 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
+  /* cursor: pointer; ТИП ВКАЗІВНИКА МИШІ НА ОБ'ЄКТІ, pointer вказівник, рука */
 }
+
 .button-service:hover,
 .button-service:focus {
   background-color: #404bbf;
 }
 
-/* section 2 */
+/** -------------------- section 2 ----------------- */
+
+.skills {
+  padding: 120px 0;
+}
+
+.section-2-list-div .list {
+  gap: 24px;
+}
+
+.characteristics {
+  width: calc((100% - 72px) / 4);
+}
 
 .second-title {
   font-weight: 500;
@@ -170,59 +246,140 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
 }
+
+.characteristics .second-title {
+  margin-bottom: 8px;
+}
+
 .paragraf {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
   color: #434455;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+/**--------------------------- section 3 ---------------------- */
+
+.doing {
+  padding: 120px 0;
 }
-/* section 3 */
+
 .title-main {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  /* text-align: center; ВИРІВНЮВАННЯ ТЕКСТУ ЗА ГОРИЗОНТАЛЛЮ */
   text-transform: capitalize;
+  /* text-transform: capitalize; РЕГІСТР ТЕКСТУ, CAPITALIZE-перша літера кожного слова перетворюється на ВЕЛИКУ */
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
-/* section 4 */
+.section-3-list-div .list {
+  gap: 24px;
+}
+
+.work {
+  width: calc((100% - 48px) / 3);
+}
+
+.title-main list {
+  padding-left: 0px;
+}
+
+/** -------------------------- section 4 -----------------*/
 .sec-ourteam {
+  padding: 120px 0;
+}
+
+.section-4-list-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: #f4f4fd;
 }
+
+.our-team {
+  gap: 24px;
+}
+
 .list-foto {
-  background-color: var(--background-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
-/* footer */
+
+.pib {
+  padding: 32px 16px;
+}
+
+.pib .second-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-foto .second-title {
+  text-align: center;
+}
+
+.pib .paragraf {
+  text-align: center;
+}
+
+/**--------------------- footer -------------------------- */
+
 .footer {
-  background-color: #2e2f42;
+  padding: 100px 0;
 }
+
+.footer-a-p {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* FOREST GREEN */
+  background: #0f3f3c;
+}
+
+.footer-a-p a {
+}
+
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* text-transform: uppercase; РЕГІСТР СИМВОЛІВ У ТЕКСТІ */
+  color: #4d5ae5;
+}
+
+.web {
   color: #f4f4fd;
 }
 
-.footert-p {
+.footer-p {
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.032em;
+  /* letter-spacing: 0.032em; ІНТЕРВАЛ МІЖ СИМВОЛАМИ */
+  padding-top: 16px;
 }
-/* portfolio */ /* portfolio */ /* portfolio */
 
 /* main */
 .button-all {
@@ -246,4 +403,72 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.sec-ourteam .list {
+  padding: 72px 156px 104px 156px;
+}
+
+.address {
+  display: block;
+}
+
+img {
+  /* убираем снизу отступ от каждой картинки */
+  display: block;
+  /* максимальная ширина, чтоб не растягивались */
+  max-width: 100%;
+}
+
+/* portfolio */ /* P-O-R-T-F-O-L-I-O */ /* portfolio */
+
+.portfolio-button-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin-top: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+
+  width: 586px;
+  height: 48px;
+}
+
+.button-all {
+  width: 69px;
+  height: 48px;
+}
+
+.portfolio-list {
+  display: flex;
+  /* FLEX - это в одну строку */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; - в строке больше одного этажа */
+
+  gap: 16px;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+}
+
+.portfolio-list li {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-button-list li {
+  /* border-radius скругление, но изобр сверху не скруглилось */
+  /* нужно запретить переполнение елементов */
+  /* доб в начале overflow: hidden; */
+  overflow: hidden;
+  /* overflow: hidden; СКРУГЛИТЬ КАРТИНКИ */
+  border-radius: 4px;
+  border: #404bbf;
+}
+
+.portfolio-button-list li:hover {
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
 }
