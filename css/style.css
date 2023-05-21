@@ -287,6 +287,18 @@ a {
   gap: 24px;
 }
 
+.title-main {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  /* text-align: center; ВИРІВНЮВАННЯ ТЕКСТУ ЗА ГОРИЗОНТАЛЛЮ */
+  text-transform: capitalize;
+  /* text-transform: capitalize; РЕГІСТР ТЕКСТУ, CAPITALIZE-перша літера кожного слова перетворюється на ВЕЛИКУ */
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
 .work {
   width: calc((100% - 48px) / 3);
 }
