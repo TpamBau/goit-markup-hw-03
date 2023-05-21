@@ -354,7 +354,6 @@ img {
 }
 
 .footer-a-p {
-  display: inline-block;
 }
 
 .footer-logo {
@@ -372,6 +371,7 @@ img {
 
 .web {
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-p {
