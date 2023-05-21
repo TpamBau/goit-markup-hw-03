@@ -26,6 +26,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* Спискам убрать точки */
@@ -73,6 +74,7 @@ img {
   align-items: baseline;
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  justify-content: space-between;
 }
 
 .header-navigation {
@@ -160,7 +162,6 @@ img {
 /**---------------------- section 1 --------------------- */
 
 .hero {
-  padding: 188px 0;
 }
 
 .hero-container {
