@@ -374,6 +374,7 @@ a {
   text-transform: uppercase;
   /* text-transform: uppercase; РЕГІСТР СИМВОЛІВ У ТЕКСТІ */
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .web {
@@ -387,7 +388,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.032em;
   /* letter-spacing: 0.032em; ІНТЕРВАЛ МІЖ СИМВОЛАМИ */
-  padding-top: 16px;
 }
 
 /** ------------------------------ main -------------*/
