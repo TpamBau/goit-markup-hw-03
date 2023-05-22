@@ -5,11 +5,10 @@
 body {
   font-family: 'Roboto', normal;
   padding: 1px;
-  width: 1440px;
+  /* width: 1440px; */
   background-color: var(--background-color);
   margin: 0 auto;
   /* box-sizing: border-box;
- 
   margin-left: auto;
   margin-right: auto; */
 }
@@ -32,7 +31,10 @@ ol {
 }
 
 img {
+  /* убираем снизу отступ от каждой картинки */
   display: block;
+  /* максимальная ширина, чтоб не растягивались */
+  max-width: 100%;
 }
 
 a {
@@ -117,9 +119,6 @@ a {
   /* font-style: normal; НАКРЕСЛЕННЯ ТЕКСТУ, НОРМ, КУРСИВ */
 }
 
-.header-address li {
-}
-
 .span-logo {
   color: #2e2f42;
 }
@@ -127,7 +126,7 @@ a {
 
 .header-address-link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -156,10 +155,9 @@ a {
   color: #404bbf;
 }
 
-. portfolio-list .link {
+.portfolio-list .link {
   background: #ffffff;
   /* CORNFLOWER */
-
   border: 1px solid #e7e9fc;
 }
 
@@ -250,7 +248,6 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
 }
 
 .visually-hidden {
@@ -369,7 +366,6 @@ a {
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -433,13 +429,6 @@ a {
 
 .address {
   display: block;
-}
-
-img {
-  /* убираем снизу отступ от каждой картинки */
-  display: block;
-  /* максимальная ширина, чтоб не растягивались */
-  max-width: 100%;
 }
 
 /** portfolio */ /* P-O-R-T-F-O-L-I-O */ /* portfolio */
